@@ -2,7 +2,6 @@ package PassTheFootball;
 
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.paint.Color;
 import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Rectangle;
 
@@ -24,14 +23,14 @@ public class Field {
 
         Image fieldImage = null;
         try {
-            fieldImage = new Image(new FileInputStream("C:\\Users\\mdati\\Downloads\\Pass The Football\\src\\Images\\Football Field.png"));
+            fieldImage = new Image(new FileInputStream("G:\\Projects\\Pass-The-Football\\src\\Images\\Football Field.png"));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
 
         Image grassImage = null;
         try {
-            grassImage = new Image(new FileInputStream("C:\\Users\\mdati\\Downloads\\Pass The Football\\src\\Images\\Field Grass.jpg"));
+            grassImage = new Image(new FileInputStream("G:\\Projects\\Pass-The-Football\\src\\Images\\Field Grass.jpg"));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

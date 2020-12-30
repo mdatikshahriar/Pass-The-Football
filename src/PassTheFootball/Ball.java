@@ -36,7 +36,7 @@ public class Ball {
 
         Image ballImage = null;
         try {
-            ballImage = new Image(new FileInputStream("C:\\Users\\mdati\\Downloads\\Pass The Football\\src\\Images\\Football.png"));
+            ballImage = new Image(new FileInputStream("G:\\Projects\\Pass-The-Football\\src\\Images\\Football.png"));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

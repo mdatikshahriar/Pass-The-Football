@@ -15,20 +15,11 @@ import javafx.util.Duration;
 
 public class RotatingBar1 {
 
-    private int barX;
-    private int barY;
-    private int barWidth;
-    private int barHeight;
     static Line bar;
     static Timeline timeline;
     static Rotate rotation;
 
     public RotatingBar1(int barX, int barY, int barWidth, int barHeight) {
-
-        this.barX = barX;
-        this.barY = barY;
-        this.barWidth = barWidth;
-        this.barHeight = barHeight;
 
         bar = new Line();
         bar.setStartX(barX);

@@ -1,7 +1,6 @@
 package PassTheFootball;
 
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
@@ -14,15 +13,10 @@ import java.io.FileNotFoundException;
 
 public class StartPage {
 
-    private float startPageWidth = 200;
-    private float startPageHeight = 500;
-    private Scene startPageScene;
-    private ImageView playButton;
+    private final Scene startPageScene;
+    private final ImageView playButton;
 
     public StartPage(float startPageWidth, float startPageHeight) {
-
-        this.startPageWidth = startPageWidth;
-        this.startPageHeight = startPageHeight;
 
         Pane startPagePane = new Pane();
 
@@ -44,14 +38,14 @@ public class StartPage {
 
         Image startPageImage = null;
         try {
-            startPageImage = new Image(new FileInputStream("C:\\Users\\mdati\\Downloads\\Pass The Football\\src\\Images\\Football Field Sunrise.jpg"));
+            startPageImage = new Image(new FileInputStream("G:\\Projects\\Pass-The-Football\\src\\Images\\Football Field Sunrise.jpg"));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
 
         Image footballImage = null;
         try {
-            footballImage = new Image(new FileInputStream("C:\\Users\\mdati\\Downloads\\Pass The Football\\src\\Images\\firy football.png"));
+            footballImage = new Image(new FileInputStream("G:\\Projects\\Pass-The-Football\\src\\Images\\firy football.png"));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

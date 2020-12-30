@@ -7,8 +7,8 @@ public class BallMovement {
 
     public BallMovement(int x, int y) {
 
-        this.x = x;
-        this.y = y;
+        BallMovement.x = x;
+        BallMovement.y = y;
     }
 
     public static int getX() {
